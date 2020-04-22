@@ -2,7 +2,7 @@
 // The key function (sends the email and adds the record to the MySQL Database)
 if($_POST["submit"]) {
 
-// Variables for the Delivery Page
+// Variables for the contact capture Page
     $name=$_POST["name"];
     $tel=$_POST["tel"];
     
