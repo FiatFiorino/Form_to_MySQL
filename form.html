@@ -1,0 +1,36 @@
+<html>
+ <head>
+  <title>Form</title>
+ </head>
+
+ <body>
+<!-- this pulls the thank you variable from the php script -->
+  <?=$thankYou ?>
+  
+   <div align="center" class="container-fluid">
+   <div class="col-lg-12">
+   
+<!-- the form, anything between the form tags will be included -->
+    <form method="post" action="delivery.php">
+     <div class="row row-cols-3" align="right">
+      <div class="col">
+        <h4><center><strong>Contact Details</strong></center></h4>
+
+        <p>
+          <label>Driver Details:</label><br>
+           <input name="name" placeholder="Your Surname" required><br>
+           <input name="tel" type="email" placeholder="Your Email Address" required><br>
+           <hr>
+          
+ <!-- this submits the data via the php script to MySQL -->
+           <input type="submit" name="submit">
+        </p>
+     </form>
+    </div>
+    </div>
+    
+<!-- Additional JS below here -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ </body>
+</html>
